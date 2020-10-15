@@ -17,14 +17,14 @@
                 <li>Product</li>
             </ul>
         </nav>
-        <div class="model-utama">
-            <img src="img/model1.jpg" alt="">
+        <!-- <div class="model-utama">
+            <img src="img/img1.png" alt="" title="Kemeja olivia hasler">
         </div>
         <div class="judul-product">
             <h1>Kemeja olivia hasler</h1>
         </div>
         <div class="model-kedua">
-            <img src="img/album-art.jpg" alt="">
+            <img src="img/album-art.jpg" alt="" title="Kemeja olivia hasler">
         </div>
         <div class="keterangan-product">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt inventore architecto</p>
@@ -32,10 +32,49 @@
             <p>IDR : 40k</p>
         </div>
         <p class="model">Model By: Clarissa</p>
-        <h2>02</h2>
+        <h2>02</h2> -->
+
+        <!-- Halaman Untuk Pemilihan Product -->
+
+        <div class="logo"></div>
+        <div class="icon"><img src="https://img.icons8.com/nolan/64/shopping-cart-promotion.png"/></div>
+
+        <div class="container-product">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/img1.png" alt=""><p>Kemeja olivia hasler</p></div>
+                  <div class="swiper-slide"><img src="img/img2.png" alt=""><p>Blouse kotak</p></div>
+                  <div class="swiper-slide"><img src="img/img4.png" alt=""><p>Kemeja Serut</p></div>
+                  <div class="swiper-slide"><img src="img/img3.png" alt=""><p>Blouse kotak merah</p></div>
+                  <div class="swiper-slide"><img src="img/img6.png" alt=""><p>Kemeja Jeans</p></div>
+                </div>
+             </div>
+        </div>
+        <div class="social-icon">
+            <img src="https://img.icons8.com/android/24/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/material-sharp/24/000000/github.png"/>
+            <img src="https://img.icons8.com/metro/24/000000/instagram-new.png"/>
+        </div>
+        <div class="keterangan">
+            <h2>
+                Passion With <span>Your Style</span>
+            </h2>
+        </div>
+
     </section>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: -100,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+    </script>
 </body>
 </html>
