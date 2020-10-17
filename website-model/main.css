@@ -39,17 +39,17 @@ nav ul li:nth-child(3){
 .besar a:hover{
     color: #212121;
 }
-/* .model-utama{
+.model-utama{
     position: absolute;
     width: 40%;
-    height: 50vh;
+    height: 0vh;
     background: #212121;
     top: 0;
     right: 0;
     box-shadow: 0 0 25px #212121;
 }
 .model-utama img{
-    width: 50%;
+    width: 0%;
     position: absolute;
     top: 10%;
     left: 20%;
@@ -65,7 +65,7 @@ nav ul li:nth-child(3){
 .model-kedua{
     position: absolute;
     width: 30%;
-    height: 40vh;
+    height: 0vh;
     background: #212121;
     bottom: 0;
     left:  0;
@@ -73,6 +73,7 @@ nav ul li:nth-child(3){
 }
 .model-kedua img{
     width: 60%;
+    height: 60vh;
     position: absolute;
     top: -40%;
     left: 20%;
@@ -85,10 +86,12 @@ nav ul li:nth-child(3){
     transform: translateY(-20px);
 }
 .keterangan-product{
+    scale: 0;
+    opacity: 0;
     width: 25%;
     height: 40vh;
     position: absolute;
-    top: 47%;
+    top: 0;
     left: 32%;
     padding: 20px 0 0 15px;
     border-top: 2px solid #212121;
@@ -108,6 +111,8 @@ nav ul li:nth-child(3){
     border-bottom: 2px solid #d18126;
 }
 .judul-product{
+    scale: 0;
+    opacity: 0;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -118,6 +123,8 @@ nav ul li:nth-child(3){
 
 }
 .model{
+    scale: 0;
+    opacity: 0;
     position: absolute;
     bottom: 0;
     left: 30%;
@@ -126,7 +133,9 @@ nav ul li:nth-child(3){
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-h2{
+.h2{
+    scale: 0;
+    opacity: 0;
     position: absolute;
     bottom: 5%;
     right: -20%;
@@ -134,7 +143,7 @@ h2{
     font-size: 2em;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-} */
+}
 
 /* Halaman Pemilihan Product */
 
@@ -172,6 +181,11 @@ h2{
       width: 40%;
       border-bottom: 2px solid #fff;
       padding-bottom: 10px;
+      cursor: pointer;
+      transition: .5s all;
+  }
+  .swiper-slide p:hover{
+      text-shadow: 0 0 10px #fff;
   }
 .logo{
     position: absolute;
@@ -236,4 +250,13 @@ h2{
     font-weight: bold;
     border-bottom: 2px solid #f08826;
     padding-bottom: 5px;
+}
+.kotak{
+    width: 100%;
+    height: 0vh;
+    position: absolute;
+    z-index: 99;
+    background: #4d2403;
+    top: 5%;
+    transform-origin: bottom;
 }
