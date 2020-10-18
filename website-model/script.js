@@ -1,13 +1,15 @@
 const daftarProduct = document.querySelectorAll('.swiper-slide');
 let home = document.querySelector('.besar');
-let kontainerModalUtama = document.querySelector('.model-utama');
-
+let kontainerModalUtama = document.querySelector('.model-utama img');
+let judul = document.querySelector('.judul-product h1');
+let text = document.querySelectorAll('.text');
 daftarProduct.forEach(function(btn){
     btn.addEventListener('click', function(e){
-        if(e.target.classList.contains('img')){
-            const gambar = e.target.dataset.gambar;
-            kontainerModalUtama.innerHTML = gambar;
-            anime({
+        if(e.target.className === 'img'){
+            kontainerModalUtama.src = e.target.src;
+        }
+
+         anime({
                 targets : '.kotak',
                 keyframes: [
                     {height: '90vh', top : '5%'},
@@ -83,7 +85,6 @@ daftarProduct.forEach(function(btn){
                 duration : 100,
                 delay : 4000,
             })
-        }
     });
 });
 
