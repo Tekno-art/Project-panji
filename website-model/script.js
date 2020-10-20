@@ -5,36 +5,6 @@ let judul = document.querySelector('.judul-product');
 let text = document.querySelectorAll('.text');
 const kontenKeterangan = document.querySelectorAll('.konten-keterangan');
 
-// Data Baju
-
-const dataBaju = [
-    {
-        "nama" : "Kemeja olivia hasler",
-        "ukuran" : "LD :84 P :60",
-        "harga" : "IDR : 40k"
-    },
-    {
-        "nama" : "Blouse kotak",
-        "ukuran" : "LD 94 P 72",
-        "harga" : "IDR 35k"
-    },
-    {
-        "nama" : "Kemeja Serut",
-        "ukuran" : "LD 92 P 70",
-        "harga" : "IDR 45k"
-    },
-    {
-        "nama" : "Blouse kotak merah",
-        "ukuran" : "LD 106 P 62",
-        "harga" : "IDR 55k"
-    },
-    {
-        "nama" : "Kemeja serut kool",
-        "ukuran" : "LD 87 P 59",
-        "harga" : "IDR 40k"
-    },
-    
-]
 
 daftarProduct.forEach((btn) =>{
     btn.addEventListener('click', function(e){
@@ -204,15 +174,3 @@ home.addEventListener('click', function(){
         delay : 700,
     })
 });
-// dataBaju.filter(function(data){
-    // let kumpulanData = '';
-    //         kumpulanData += `<div class="judul-product">
-    //                             <h1>${data.nama}</h1>
-    //                         </div>
-    //                         <div class="keterangan-product">
-    //                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt inventore architecto</p>
-    //                             <p class="desc">${data.ukuran}</p>
-    //                             <p>${data.harga}</p>
-    //                         </div>`
-    //         const kontenKeterangan = document.querySelector('.konten-keterangan');
-// })
